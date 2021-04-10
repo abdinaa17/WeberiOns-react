@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,500;0,600;0,700;0,900;1,200;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+:root {
+  --header-clr: #07122b;
+  --primary-clr: #0099f6;
+  --main-white: #fafafa;
+  --secondary-clr: #ffd44d;
+}
+
+/* General Styles */
+
+body {
+  color: var(--main-white);
+  line-height: 1.5;
+}
+
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+h1,
+h2,
+h3,
+p {
+  max-width: 50ch;
+}
+/* Utilities */
+
+/* Header Begins */
+.header {
+  background: var(--header-clr);
+  height: 80vh;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -4rem;
+  text-transform: uppercase;
+  height: 40%;
+}
+
+.nav a {
+  padding: 1rem;
+}
+
+.nav__left .logo {
+  width: 12rem;
+  color: var(--main-white);
+  margin-top: 0;
+}
+
+.nav__center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__center a:hover,
+.nav__right--link:hover {
+  color: var(--secondary-clr);
+}
+
+.btn {
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn__primary {
+  background: var(--primary-clr);
+}
+.btn__dark {
+  border: 1px solid var(--main-white);
+}
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60%;
+  margin: 0 4rem;
+}
+
+.hero__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+.hero__left h1 {
+  font-weight: 900;
+  text-align: left;
+  font-size: 2.2rem;
+}
+.hero__left span {
+  color: var(--secondary-clr);
+  font-weight: 900;
+  margin-left: 0.5rem;
+}
+.hero__left p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 0.5rem;
+}
+.hero__left a {
+  margin: 0 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.hero__img {
+  width: 35rem;
+  height: 100%;
+}
